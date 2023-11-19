@@ -37,15 +37,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'product',
-    'rest_framework.authtoken',
+    'drf_yasg',
 
+    'rest_framework',
+    'rest_framework.authtoken',
+    'product',
+    'user',
 ]
 
 
-
 REST_FRAMEWORK = {
+    'PAGE_SIZE':3,
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.BasicAuthentication',
